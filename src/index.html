@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>&lt;/salt&gt; :: ToDo</title>
-  <link rel="stylesheet" type="text/css" href="./style/todo.css">
-  <script defer src="./js/todo.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/salt&gt; :: ToDo</title>
+    <link rel="stylesheet" type="text/css" href="./style/todo.css">
+    <script defer src="./js/todo.js"></script>
 </head>
+
 <body>
-  <!-- Add your markup here -->
+    <section id="appContainer" class="app-container">
+        <div class="input-todo">
+            <div class="title-container">
+                <h2>New ToDo</h2>
+            </div>
+            <div class="description-container">
+                <form>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" required value="Shopping"> <br>
+                    <label for="description">Description:</label>
+                    <input id="description" type="text" value="Milk, Apples"> <br> <br>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <div id="todoList" class="card-list">
+            <!-- New todos are generated here -->
+        </div>
+    </section>
 </body>
+
 </html>
